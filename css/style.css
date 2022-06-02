@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
+
+*
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+}
+
+.logo
+{
+    width: 45%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    max-width: 400px;
+}
+.localisation
+{
+    background-color: rgb(241, 241, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 6px 0px rgba(170, 170, 170, 0.41);
+    margin-bottom: 0;
+}
+
+.localisation i
+{
+    position: relative;
+    right: 25px;
+}
+
+.presentation
+{
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    margin-bottom: 50px;
+}
+
+.presentation p
+{
+    margin-top: 0;
+    color: rgb(110, 110, 110);
+    font-size: 16px;
+}
+
+.presentation input
+{
+    color: white;
+    border-radius: 40px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    height: 50px;
+    max-width: 220px;
+    width: 100%;
+    border: none;
+}
+
+.fonctionnement
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 280px;
+}
+
+.fonctionnement_bulle
+{
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px rgb(235, 234, 234);
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.fonctionnement_bulle:hover
+{
+    background-color:#f7eeff;
+}
+
+.fonctionnement_bulle:hover i
+{
+    color:#9356DC;
+}
+
+.fonctionnement_bulle p
+{
+    background-color: #9356DC;
+    color: white;
+    border-radius: 20px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    height: 27px;
+    align-items: center;
+    margin-right: 4%;
+    position: relative;
+    right: 10px;
+}
+
+.fonctionnement_bulle i
+{
+    color: rgb(134, 134, 134);
+    font-size: 20px;
+    margin-right: 8%;
+}
+
+#fa-ellipsis-vertical
+{
+    margin: 0;
+}
+
+.restaurants
+{
+    margin-top: 65px;
+    background-color: rgb(247, 247, 247);
+}
+
+.restaurants h2
+{
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+figure
+{
+    margin: 20px;
+}
+
+figure p
+{
+    font-size: 17px;
+    color: rgb(70, 70, 70);
+    margin-top: 5px;
+}
+
+figcaption
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 27px;
+}
+
+img
+{
+    object-fit: cover;
+    width: 100%;
+}
+
+.bloc_restaurants
+{
+   margin-bottom: 70px;
+}
+
+.cartes_restaurants
+{
+	height: 260px;
+	background-color: white;
+	border-radius: 20px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 3px 3px 10px rgb(218, 206, 206);
+}
+
+.img_restaurants
+{
+	overflow: hidden;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.txt_restaurants
+{
+    height: 75px;
+	margin-left: 5%;
+	font-size: 14px;
+}
+
+.cartes_restaurants h2
+{
+    padding: 0;
+	font-size: 17px;
+    margin-bottom: 0;
+}
+
+
+
+/* .nom_et_coeur
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 30px;
+} */
+
+.cartes_restaurants i
+{
+    /* position: relative;
+    left: 270px;
+    bottom: 55px; */
+    font-size: 24px;
+}
+
+/* .fa-heart {
+    color: #FFF;
+    background-color: #000;
+    border-radius: 50%;
+    padding:.2em;
+}
+.fa-heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 1s ease-out;
+}
+.fa-heart:hover::before{
+    color: red;
+    cursor: pointer;
+} */
+
+footer
+{
+    background-color: rgb(65, 65, 65);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    padding-left: 27px;
+    padding-bottom: 30px;
+}
+
+footer p
+{
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+footer i
+{
+    margin-right: 10px;
+}
+
+.ohmyfood_footer
+{
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: lighter;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.mentions_contact
+{
+    font-weight: lighter;
+}
+
+@media all and (min-width: 992px)
+{
+
+.presentation
+{
+    margin-bottom: 0;
+}
+.fonctionnement_restaurants
+{
+    display: flex;
+}
+
+.fonctionnement
+{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    width: 2500px;
+}
+
+.restaurants
+{
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.bloc_restaurants
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cartes_restaurants
+{
+    max-width: 350px;
+}
+
+.titre_restaurants
+{
+    font-size: 32px;
+}
+}
