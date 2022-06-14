@@ -66,6 +66,11 @@ header
     border: none;
 }
 
+input:hover
+{
+    background-color: black;
+}
+
 .fonctionnement
 {
     margin-left: 5%;
@@ -136,6 +141,7 @@ header
 figure
 {
     margin: 20px;
+    position: relative;
 }
 
 figure p
@@ -143,6 +149,26 @@ figure p
     font-size: 17px;
     color: rgb(70, 70, 70);
     margin-top: 5px;
+}
+
+.nouveau
+{
+    background-color: rgb(131, 231, 198);
+    color: rgb(46, 107, 102);
+    width: 80px;
+    margin-top: 15px;
+    position: absolute;
+    left: 70%;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+h3
+{
+    margin: 7px;
+    font-weight:500
 }
 
 figcaption
