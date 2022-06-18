@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
+@import url('/css/font-awesome.min.css');
+*
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes fondu 
+{
+    from 
+    {
+        opacity:0;
+    }
+    to 
+    {
+        opacity:1;
+        transform: translateY(-10px)
+    }
+}
+
+@keyframes check 
+{
+    from
+    {
+        left: 40px;
+        transform: rotate(0deg)
+    }
+    to
+    {
+        left: 35px;
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes shrink
+{
+    from
+    {
+        width: 100%
+    }
+    to
+    {
+        width: 80%
+    }
+}
+
+@keyframes lightening
+{
+    from
+    {
+        opacity: 1;
+        box-shadow: 1px 1px 5px 3px rgb(219, 216, 216);
+    }
+    to
+    {
+        opacity: 0.80;
+        box-shadow: 3px 3px 6px 4px rgb(219, 216, 216);
+    }
+}
+
+@keyframes fill
+{
+    from
+    {
+        font-weight: 600;
+    }
+    to
+    {
+        font-weight: 600;
+        background: linear-gradient(to top, #FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+
+section
+{
+    background-color: rgb(247, 247, 247);
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 20px;
+}
+
+header i
+{
+    font-size: 22px;
+}
+
+.logo
+{
+    width: 45%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    max-width: 400px;
+    min-width: 100px;
+    margin-left: 20%;
+}
+
+.image_top
+{
+    height: 260px;
+    display: flex;
+}
+
+img
+{
+    object-fit: cover;
+    width: 100%;
+}
+
+.menu
+{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    bottom: 50px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.menu_sans_titre
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.categories
+{
+    width: 100%;
+    max-width: 358px;
+}
+
+.titre
+{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 35px;
+    font-size: 24px;
+}
+
+.fa-heart:hover
+{
+    animation: fill 300ms forwards;
+}
+
+h1
+{
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: lighter;
+    font-size: 28px;
+}
+
+h2
+{
+    font-weight: lighter;
+    font-size: 17px;
+    color:rgb(105, 105, 105);
+    border-bottom: solid rgb(153, 215, 240) 3px;
+    margin-bottom: 26px;
+    height: 25px;
+    width: 12%;
+}
+
+h3
+{
+    margin-top: 13px;
+    margin-bottom: 0;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+p
+{
+    margin-top: 8px;
+    color:rgb(90, 90, 90);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.nourriture
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px rgb(235, 234, 234);
+    margin-bottom: 15px;
+    margin-right: 12px;
+    padding-left: 11px;
+    padding-right: 25px;
+    max-width: 310px;
+    opacity: 0;
+    overflow: hidden;
+}
+.nourriture_ligne1 {
+    animation: fondu 0.5s linear 0.2s forwards;
+}
+.nourriture_ligne2 {
+    animation: fondu 0.5s linear 0.4s forwards;
+}
+.nourriture_ligne3 {
+    animation: fondu 0.5s linear 0.6s forwards;
+}
+
+.prix_check
+{
+    display: flex;
+    position: relative;
+    left: 15px;
+}
+
+.fa-circle-check, .back
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 40px;
+    bottom: 0px;
+    background-color: transparent;
+    height: 77px;
+    width: 65px;
+    color: white;
+    font-size: 25px;
+    border-radius: 0 20px 20px 0;
+}
+
+.back
+{
+    background-color: #99E2D0;
+}
+
+.nourriture:hover .fa-circle-check
+{
+    animation: check 0.5s forwards;
+}
+
+.anim_width:hover
+{
+    animation: shrink 0.5s forwards;
+}
+
+.ingredients_et_prix
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prix
+{
+    font-weight: 500;
+    color: black;
+}
+
+input
+{
+    color: white;
+    border-radius: 40px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    height: 50px;
+    width: 200px;
+    box-shadow: 1px 1px 5px 3px rgb(219, 216, 216);
+    border: none;
+}
+
+input:hover
+{
+    animation: lightening 300ms forwards;
+}
+
+.bouton_commander
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    max-width: 358px;
+    width: 100%;
+}
+
+footer
+{
+    background-color: rgb(65, 65, 65);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    padding-left: 27px;
+    padding-bottom: 30px;
+}
+
+footer p
+{
+    margin-top: 0px;
+    margin-bottom: 12px;
+    color: white;
+    font-weight: 500;
+}
+
+footer i
+{
+    margin-right: 10px;
+}
+
+.ohmyfood_footer
+{
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: lighter;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    color: white;
+    border-bottom: hidden;
+}
+
+.mentions_contact
+{
+    font-weight: lighter;
+}
+
+@media all and (min-width: 1094px)
+{
+    .bouton_commander
+    {
+        max-width: none;
+    }
+}

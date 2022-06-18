@@ -5,10 +5,45 @@
     font-family: 'Roboto', sans-serif;
 }
 
+@keyframes lightening
+{
+    from
+    {
+        opacity: 1;
+        box-shadow: 1px 1px 5px 3px rgb(219, 216, 216);
+    }
+    to
+    {
+        opacity: 0.80;
+        box-shadow: 3px 3px 6px 4px rgb(219, 216, 216);
+    }
+}
+
+@keyframes fill
+{
+    from
+    {
+        font-weight: 600;
+    }
+    to
+    {
+        font-weight: 600;
+        background: linear-gradient(to top, #FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
 header
 {
     display: flex;
     justify-content: center;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
 }
 
 .logo
@@ -64,11 +99,12 @@ header
     max-width: 220px;
     width: 100%;
     border: none;
+    box-shadow: 1px 1px 5px 3px rgb(219, 216, 216);
 }
 
 input:hover
 {
-    background-color: black;
+    animation: lightening 300ms forwards;
 }
 
 .fonctionnement
@@ -222,37 +258,15 @@ img
     margin-bottom: 0;
 }
 
-/* .nom_et_coeur
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-right: 30px;
-} */
-
 .cartes_restaurants i
 {
-    /* position: relative;
-    left: 270px;
-    bottom: 55px; */
     font-size: 24px;
 }
 
-/* .fa-heart {
-    color: #FFF;
-    background-color: #000;
-    border-radius: 50%;
-    padding:.2em;
+.fa-heart:hover
+{
+    animation: fill 300ms forwards;
 }
-.fa-heart::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: color 1s ease-out;
-}
-.fa-heart:hover::before{
-    color: red;
-    cursor: pointer;
-} */
 
 footer
 {
@@ -275,6 +289,11 @@ footer p
 footer i
 {
     margin-right: 10px;
+}
+
+footer a
+{
+    color: white;
 }
 
 .ohmyfood_footer
@@ -301,6 +320,7 @@ footer i
 .fonctionnement_restaurants
 {
     display: flex;
+    justify-content: center;
 }
 
 .fonctionnement
