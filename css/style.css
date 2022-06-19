@@ -34,6 +34,89 @@
     }
 }
 
+@keyframes spin
+{
+    to
+    {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes loading
+{
+    from
+    {
+        opacity: 1;
+    }
+    50%
+    {
+        opacity: 0;
+        z-index: 1;
+    }
+    to
+    {
+    opacity: 0;
+    z-index:-10;
+    }
+}
+
+                     #warped {position: relative; display: block; width:588px; height:440px; right: 195px; bottom: 110px}
+
+                     #warped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
+                     transform-origin:50% 100%; }
+
+                     #warped span{font-family:'Shrikhand';font-size:38px;font-weight:regular;font-style:normal;
+                     line-height:0.65; white-space:pre; overflow:visible; padding:0px;}
+
+                     #warped .w0 { transform: rotate(3.46rad); width: 29px; height: 25px; left:
+                     231.47px; top: 337.1px;}
+
+                     #warped .w1 { transform: rotate(3.67rad); width: 23px; height: 25px; left:
+                     206.34px; top: 324.22px;}
+
+                     #warped .w2 { transform: rotate(3.89rad); width: 32px; height: 25px; left:
+                     175.84px; top: 304.83px;}
+
+                     #warped .w3 { transform: rotate(4.09rad); width: 20px; height: 25px; left:
+                     161.47px; top: 281.53px;}
+
+                     #warped .w4 { transform: rotate(4.26rad); width: 20px; height: 25px; left:
+                     148.81px; top: 260px;}
+
+                     #warped .w5 { transform: rotate(4.44rad); width: 23px; height: 25px; left:
+                     137.99px; top: 235.23px;}
+
+                     #warped .w6 { transform: rotate(4.62rad); width: 23px; height: 25px; left:
+                     133.04px; top: 207.72px;}
+
+                     #warped .w7 { transform: rotate(4.81rad); width: 23px; height: 25px; left:
+                     133.27px; top: 179.76px;}
+
+
+#loader
+{
+    animation: loading 1s ease-out 3s forwards;
+    position: fixed;
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun
+{
+    animation: spin 4s infinite linear;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to top, #FF79DA,#e486e7, #fad586);
+    border-radius: 100px;
+    box-shadow: 1px 1px 15px 2px rgb(240, 168, 109);
+}
+
 header
 {
     display: flex;
