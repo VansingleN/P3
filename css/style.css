@@ -55,17 +55,17 @@
     }
     to
     {
-    opacity: 0;
-    z-index:-10;
+        opacity: 0;
+        z-index:-10;
     }
 }
 
-                     #warped {position: relative; display: block; width:588px; height:440px; right: 195px; bottom: 110px}
+                     /* #warped {position: relative; display: block; width:588px; height:440px; right: 195px; bottom: 110px}
 
                      #warped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
                      transform-origin:50% 100%; }
 
-                     #warped span{font-family:'Shrikhand';font-size:38px;font-weight:regular;font-style:normal;
+                     #warped span{font-family:'Shrikhand';font-size:38px;font-style:normal;
                      line-height:0.65; white-space:pre; overflow:visible; padding:0px;}
 
                      #warped .w0 { transform: rotate(3.46rad); width: 29px; height: 25px; left:
@@ -90,17 +90,17 @@
                      133.04px; top: 207.72px;}
 
                      #warped .w7 { transform: rotate(4.81rad); width: 23px; height: 25px; left:
-                     133.27px; top: 179.76px;}
+                     133.27px; top: 179.76px;} */
 
 
 #loader
 {
     animation: loading 1s ease-out 3s forwards;
     position: fixed;
-    background: linear-gradient(to top, #FF79DA, #9356DC);
+    background: white;
+    opacity: 1;
     height: 100%;
     width: 100%;
-    opacity: 1;
     z-index: 1;
     display: flex;
     justify-content: center;
