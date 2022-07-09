@@ -32,18 +32,6 @@
     }
 }
 
-@keyframes shrink
-{
-    from
-    {
-        width: 100%
-    }
-    to
-    {
-        width: 80%
-    }
-}
-
 @keyframes lightening
 {
     from
@@ -257,9 +245,16 @@ a
     animation: check 0.5s forwards;
 }
 
-.anim_width:hover
+.nourriture .anim_width
 {
-    animation: shrink 0.5s forwards;
+    transition: width 0.5s;
+    width: 100%;
+}
+
+.nourriture:hover .anim_width
+{
+    transition: width 0.5s;
+    width: 80%;
 }
 
 .ingredients_et_prix
