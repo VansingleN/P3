@@ -121,6 +121,9 @@ img
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .categories
@@ -137,6 +140,9 @@ img
     justify-content: space-between;
     padding-right: 35px;
     font-size: 24px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fa-heart:hover
@@ -341,4 +347,42 @@ footer i
     {
         max-width: none;
     }
+    .bloc_footer
+    {
+        display: flex;
+    }
+    .encadrement_footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ohmyfood_footer
+    {
+        display: flex;
+        justify-content: center;
+    }
+    footer a
+    {
+        margin-left: 20px;
+    }
+}
+
+@media all and (min-width: 992px)
+{
+    /* .bloc_footer
+    {
+        display: flex;
+    }
+    .encadrement_footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ohmyfood_footer
+    {
+        display: flex;
+        justify-content: center;
+    } */
 }
