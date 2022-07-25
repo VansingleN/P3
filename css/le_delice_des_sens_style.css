@@ -343,6 +343,15 @@ footer i
 
 @media all and (min-width: 1094px)
 {
+    header
+    {
+        width: 62%;
+        justify-content: flex-end;
+    }
+    .logo
+    {
+        margin-left: 520px;
+    }
     .bouton_commander
     {
         max-width: none;

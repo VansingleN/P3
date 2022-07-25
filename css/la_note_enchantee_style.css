@@ -217,6 +217,9 @@ a
 .nourriture_ligne3 {
     animation: fondu 0.5s linear 0.6s forwards;
 }
+.nourriture_ligne4 {
+    animation: fondu 0.5s linear 0.6s forwards;
+}
 
 .prix_check
 {
@@ -343,8 +346,55 @@ footer i
 
 @media all and (min-width: 1094px)
 {
+    header
+    {
+        width: 62%;
+        justify-content: flex-end;
+    }
+    .logo
+    {
+        margin-left: 520px;
+    }
     .bouton_commander
     {
         max-width: none;
     }
+    .bloc_footer
+    {
+        display: flex;
+    }
+    .encadrement_footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ohmyfood_footer
+    {
+        display: flex;
+        justify-content: center;
+    }
+    footer a
+    {
+        margin-left: 20px;
+    }
+}
+
+@media all and (min-width: 992px)
+{
+    /* .bloc_footer
+    {
+        display: flex;
+    }
+    .encadrement_footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ohmyfood_footer
+    {
+        display: flex;
+        justify-content: center;
+    } */
 }

@@ -60,39 +60,6 @@
     }
 }
 
-                     /* #warped {position: relative; display: block; width:588px; height:440px; right: 195px; bottom: 110px}
-
-                     #warped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
-                     transform-origin:50% 100%; }
-
-                     #warped span{font-family:'Shrikhand';font-size:38px;font-style:normal;
-                     line-height:0.65; white-space:pre; overflow:visible; padding:0px;}
-
-                     #warped .w0 { transform: rotate(3.46rad); width: 29px; height: 25px; left:
-                     231.47px; top: 337.1px;}
-
-                     #warped .w1 { transform: rotate(3.67rad); width: 23px; height: 25px; left:
-                     206.34px; top: 324.22px;}
-
-                     #warped .w2 { transform: rotate(3.89rad); width: 32px; height: 25px; left:
-                     175.84px; top: 304.83px;}
-
-                     #warped .w3 { transform: rotate(4.09rad); width: 20px; height: 25px; left:
-                     161.47px; top: 281.53px;}
-
-                     #warped .w4 { transform: rotate(4.26rad); width: 20px; height: 25px; left:
-                     148.81px; top: 260px;}
-
-                     #warped .w5 { transform: rotate(4.44rad); width: 23px; height: 25px; left:
-                     137.99px; top: 235.23px;}
-
-                     #warped .w6 { transform: rotate(4.62rad); width: 23px; height: 25px; left:
-                     133.04px; top: 207.72px;}
-
-                     #warped .w7 { transform: rotate(4.81rad); width: 23px; height: 25px; left:
-                     133.27px; top: 179.76px;} */
-
-
 #loader
 {
     animation: loading 1s ease-out 3s forwards;
@@ -367,16 +334,12 @@ footer p
     margin-top: 0px;
     margin-bottom: 12px;
     font-weight: 500;
+    color: white;
 }
 
 footer i
 {
     margin-right: 10px;
-}
-
-footer a
-{
-    color: white;
 }
 
 .ohmyfood_footer
@@ -441,4 +404,36 @@ footer a
 {
     font-size: 32px;
 }
+}
+
+@media all and (min-width: 1094px)
+{
+    header
+    {
+        width: 62%;
+        justify-content: flex-end;
+    }
+    .logo
+    {
+        margin-left: 520px;
+    }
+    .bloc_footer
+    {
+        display: flex;
+    }
+    .encadrement_footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ohmyfood_footer
+    {
+        display: flex;
+        justify-content: center;
+    }
+    footer a
+    {
+        margin-left: 20px;
+    }
 }
